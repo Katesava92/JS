@@ -1,9 +1,9 @@
-let money = 10;
-let income = 2;
-let addExpences = 300;
-let deposit = 1;
-let mission = 9;
-let period = 6;
+let money,
+    income,
+    addExpences,
+    deposit = 1,
+    mission = 9,
+    period = 6;
 
 alert('Hello, world!');
-console.log('Hello ' + money);
+console.log('Hidden message');
