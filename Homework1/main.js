@@ -1,9 +1,9 @@
 let money,
     income,
     addExpences,
-    deposit = 1,
-    mission = 9,
-    period = 6;
+    deposit,
+    mission,
+    period;
 
 alert('Hello, world!');
 console.log('Hidden message');
