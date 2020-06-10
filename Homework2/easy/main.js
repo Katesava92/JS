@@ -1,10 +1,10 @@
+"use strict";
 let money = 1000,
     income = '500',
     addExpences = 'Интернет, Еда, Коммуналка, Мобильная Связь',
     deposit = false,
     mission = 50000,
     period = 12;
-
 
 console.log(typeof money);
 console.log(typeof income);
