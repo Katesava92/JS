@@ -2,9 +2,7 @@
 const income = '500',
       mission = 50000;
 
-// console.log(typeof money);
-// console.log(typeof income);
-// console.log(typeof deposit);
+// console.log(typeof money, income, deposit);
 // console.log(addExpences.length);
 // console.log('Период равен ' + period + ' месяцев');
 // console.log('Цель заработать ' + mission + ' рублей');
