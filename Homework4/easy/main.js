@@ -6,7 +6,7 @@ let showTypeOf = function(data){
   console.log(data, typeof(data));
 };
 
-let money = +prompt('Ваш месячный доход?'),
+const money = +prompt('Ваш месячный доход?'),
     addExpences = prompt('Перечислите возможные рассходы за рассчитываемый период через запятую'),
     deposit = confirm('Есть ли у вас депозит в банке?'),
 
@@ -21,7 +21,7 @@ showTypeOf(deposit);
 
 console.log(addExpences.split(', '));
 
-let  getExpensesMonth = function(){
+const  getExpensesMonth = function(){
   return amount1 + amount2;
 };
 console.log(getExpensesMonth());
@@ -38,20 +38,18 @@ const getTargetMonth = function(){
 };
 console.log(getTargetMonth());
 
-let budgetDay = accumulatedMonth / 30;
+const budgetDay = accumulatedMonth / 30;
 console.log(budgetDay);
 
 
-let getStatusIncome = function(){
+const getStatusIncome = function(){
   if (budgetDay >= 1200) {
     return ('У вас высокий уровень дохода');
-    } else if (budgetDay > 600 && budgetDay < 1200) {
+    } else if (budgetDay >= 600) {
       return ('У вас средний уровень дохода');
-    } else if (budgetDay <= 600 && budgetDay >= 0) {
+    } else if (budgetDay >= 0) {
       return ('К сожалению у вас уровень дохода ниже среднего');
-    } else if (budgetDay < 0) {
-      return ('Что-то пошло не так');
-    } else {
+    }  else {
       return ('Что-то пошло не так');
     }
     
