@@ -2,7 +2,7 @@
 const income = '500',
       mission = 50000;
 
-let showTypeOf = function(data){
+const showTypeOf = function(data){
   console.log(data, typeof(data));
 };
 
@@ -30,7 +30,7 @@ console.log(getExpensesMonth());
 const getAccumulatedMonth = function(){
   return money - getExpensesMonth();
 };
-let accumulatedMonth = getAccumulatedMonth();
+const accumulatedMonth = getAccumulatedMonth();
 console.log(accumulatedMonth);
   
 const getTargetMonth = function(){
